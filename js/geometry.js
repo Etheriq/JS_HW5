@@ -100,7 +100,7 @@ function Triangle() {
         var p = this.getPerimeter() / 2;
         var a = Math.sqrt(Math.pow(this.coordinates[1].x - this.coordinates[0].x, 2) + Math.pow(this.coordinates[1].y - this.coordinates[0].y, 2));
         var b = Math.sqrt(Math.pow(this.coordinates[2].x - this.coordinates[1].x, 2) + Math.pow(this.coordinates[2].y - this.coordinates[1].y, 2));
-        var c = Math.sqrt(Math.pow(this.coordinates[2].x - this.coordinates[0].x, 2) + Math.pow(this.coordinates[2].y - this.coordinates[0].y, 2));
+        var c = Math.sqrt(Math.pow(this.coordinates[0].x - this.coordinates[2].x, 2) + Math.pow(this.coordinates[0].y - this.coordinates[2].y, 2));
 
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     };
